@@ -402,12 +402,12 @@ header .container {
   height: 40px;
   margin-bottom: 8px;
   color: var(--lightslate);
-  border-color: 1px solid var(--lightslate);
+  border: 1px solid var(--lightslate);
   border-radius: 4px;
 }
 
 .form-field-inputv:focus {
-  border-color: 1px solid var(--irish);
+  border: 1px solid var(--irish);
 }
 
 .form-field-input::placeholder {
@@ -707,7 +707,7 @@ header .container {
   /* color: #8e8f99;
   border: 1px solid #8e8f99; */
   color: var(--lightslate);
-  border-color: var(--lightslate);
+  border: 1px solid var(--lightslate);
 
   
   transition-property: color, border;
@@ -942,7 +942,7 @@ header .container {
   width: 264px;
   height: 40px;
   color: ;
-  background-color: var(--navyblue);
+  background-color: 1px solid var(--navyblue);
 }
 
 .subscribe-label-input::placeholder {
@@ -967,6 +967,9 @@ header .container {
   line-height: 1.5;
   background-color: var(--irish);
   color: var(--body-bg-color);
+  border-radius: 4px;
+  border: ;
+
 }
 
 .subscribe-svg {
