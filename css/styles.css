@@ -401,13 +401,17 @@ header .container {
   width: 360px;
   height: 40px;
   margin-bottom: 8px;
-  color: var(--lightslate);
+  /* color: var(--lightslate);
   border: 1px solid var(--lightslate);
-  border-radius: 4px;
+  border-radius: 4px; */
 }
 
-.form-field-inputv:focus {
+/* .form-field-inputv:focus {
   border: 1px solid var(--irish);
+} */
+
+.form-field-label .form-field-input:focus {
+  color: tomato;
 }
 
 .form-field-input::placeholder {
@@ -709,7 +713,6 @@ header .container {
   color: var(--lightslate);
   border: 1px solid var(--lightslate);
 
-  
   transition-property: color, border;
   transition-duration: var(--transition-time);
   transition-timing-function: var(--cubic-bezier);
@@ -865,6 +868,7 @@ header .container {
   background-color: var(--navyblue);
   padding-top: 100px;
   padding-bottom: 100px;
+
 }
 
 .logo-studio-end-page {
@@ -875,6 +879,7 @@ header .container {
   font-size: 18px;
   line-height: 1.2;
 }
+
 .end-page-text {
   color: var(--cornflower);
   font-size: 16px;
@@ -883,6 +888,9 @@ header .container {
   max-width: 264px;
 }
 
+.social-media {
+  margin-left: 120px;
+}
 .social-media-text {
   font-family: var(--Primary-font) sans-serif;
   color: var(--body-bg-color);
@@ -896,6 +904,7 @@ header .container {
   gap: 16px;
   margin-top: 16px;
 }
+
 .social-media-footer {
   width: 40px;
   height: 40px;
@@ -921,18 +930,21 @@ header .container {
   background-color: var(--success);
 }
 
-.subscribe-button-form {
-  
+.subscribe-footer {
+  margin-left: 80px;
+  /* padding: 0; */
 }
-.subscribe-field {
+
+.subscribe-button-form {
   display: flex;
-  flex-direction: column;
+  /* justify-content: center;
+  align-content: center; */
 }
 
 .subscribe-label-title {
   color: var(--body-bg-color);
   font-family: var(--Primary-font);
-  font-weight: SemiBold;
+  font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 16px;
@@ -954,12 +966,9 @@ header .container {
   border: #ffffff 30%;
 }
 
-
 .subscribe-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 168px;
+  position: relative;
+  width: 164px;
   height: 40px;
   font-family: var(--Primary-font), sans-serif;
   font-weight: bold;
@@ -968,18 +977,36 @@ header .container {
   background-color: var(--irish);
   color: var(--body-bg-color);
   border-radius: 4px;
-  border: ;
+  border: none;
+  margin-left: 24px;
+  cursor: pointer;
+  margin-top: ;
 
 }
 
+.subscribe-button-text {
+  position: absolute;
+  top: 8px;
+  bottom: 8px;
+  left: 24px;
+  font-family: var(--Primary-font), sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 .subscribe-svg {
+  position: absolute;
+  top: 8px;
+  bottom: 8px;
+  right: 24px;
   width: 24px;
   height: 24px;
   margin-left: 16px;
-  background-color: var(--irish);
+
 }
 
 .end-page > .container {
   display: flex;
-  gap: 120px;
+  /* gap: 120px; */
 }

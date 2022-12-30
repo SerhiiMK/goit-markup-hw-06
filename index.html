@@ -76,7 +76,6 @@
                 </div>
 
                 <div class="form-field">
-                  <label class="form-field-label" for="tel">Phone</label>
                   <input
                     class="form-field-input"
                     type="tel"
@@ -84,21 +83,21 @@
                     id="tel"
                     placeholder="+38-012-345-67-89"
                   />
+                  <label class="form-field-label" for="tel">Phone</label>
                 </div>
 
                 <div class="form-field">
-                  <label class="form-field-label" for="mail">Email</label>
                   <input
                     class="form-field-input"
-                    type="mail"
-                    name="mail"
-                    id="mail"
+                    type="email"
+                    name="email"
+                    id="email"
                     placeholder="me@mail.com"
                   />
+                  <label class="form-field-label" for="email">Email</label>
                 </div>
 
                 <div class="form-field">
-                  <label class="form-field-label" for="comment">Comment</label>
                   <textarea
                     class="form-field-textarea"
                     name="comment"
@@ -106,6 +105,7 @@
                     rows="10"
                     placeholder="Write additional data or comments here"
                   ></textarea>
+                  <label class="form-field-label" for="comment">Comment</label>
                 </div>
               </form>
               <div class="modal-privacypolicy">
@@ -482,28 +482,22 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div class="subscribe-footer">
+          <p class="subscribe-label-title">Subscribe</p>
           <form action="subscribe-button-form">
-            <div class="subscribe-field">
-              <label class="subscribe-label-title" for="subscribe">Subscribe</label>
-              <input
-                class="subscribe-label-input"
-                type="subscribe"
-                name="subscribe"
-                id="subscribe"
-                placeholder="E-mail"
-              />
-            </div>
-            <div>
-              <button class="subscribe-button">
-                Subscribe
-                <a href="#">
-                  <svg class="subscribe-svg">
-                    <use href="./img/webstudio-svg.svg#send-to-subscribe"></use>
-                  </svg>
-                </a>
-              </button>
-            </div>
+            <label class="subscribe-label-title" for="subscrib-email"></label>
+            <input
+              class="subscribe-label-input"
+              type="email"
+              name="email"
+              id="subscrib-email"
+              placeholder="E-mail"
+            />
+            <button class="subscribe-button">
+              <p class="subscribe-button-text">Subscribe</p>
+              <svg class="subscribe-svg">
+                  <use href="./img/webstudio-svg.svg#send-to-subscribe"></use>
+                </svg></button>
           </form>
         </div>
       </div>
