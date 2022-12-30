@@ -65,7 +65,6 @@
 
               <form class="modal-forme">
                 <div class="form-field">
-                  <label class="form-field-label" for="name">Name</label>
                   <input
                     class="form-field-input"
                     type="text"
@@ -73,6 +72,7 @@
                     id="name"
                     placeholder="John Smith"
                   />
+                  <label class="form-field-label" for="name">Name</label>
                 </div>
 
                 <div class="form-field">
@@ -105,7 +105,7 @@
                     rows="10"
                     placeholder="Write additional data or comments here"
                   ></textarea>
-                  <label class="form-field-label" for="comment">Comment</label>
+                  <label class="form-field-textarea-label" for="comment">Comment</label>
                 </div>
               </form>
               <div class="modal-privacypolicy">
@@ -116,6 +116,7 @@
                   value="privacypolicy"
                   id="privacypolicy"
                 />
+                
                 <label class="modal-privacypolicy-label" for="privacypolicy"
                   >I accept the terms and conditions of the</label
                 >
@@ -496,8 +497,9 @@
             <button class="subscribe-button">
               <p class="subscribe-button-text">Subscribe</p>
               <svg class="subscribe-svg">
-                  <use href="./img/webstudio-svg.svg#send-to-subscribe"></use>
-                </svg></button>
+                <use href="./img/webstudio-svg.svg#send-to-subscribe"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
