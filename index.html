@@ -65,6 +65,8 @@
 
               <form class="modal-forme">
                 <div class="form-field">
+                  <label class="form-field-label" for="name">Name</label>
+
                   <input
                     class="form-field-input"
                     type="text"
@@ -72,14 +74,16 @@
                     id="name"
                     placeholder="John Smith"
                   />
-                  <label class="form-field-label" for="name">Name</label>
-
-                  <svg class="modal-input-icon">
-                    <use class="modal-input-icon-svg" href="./img/webstudio-svg.svg#user-name"></use>
-                  </svg>
+                    <svg class="modal-input-icon">
+                      <use
+                        class="modal-input-icon-svg"
+                        href="./img/webstudio-svg.svg#user-name"
+                      ></use>
+                    </svg>
                 </div>
 
                 <div class="form-field">
+                  <label class="form-field-label" for="tel">Phone</label>
                   <input
                     class="form-field-input"
                     type="tel"
@@ -87,15 +91,16 @@
                     id="tel"
                     placeholder="+38-012-345-67-89"
                   />
-                  <label class="form-field-label" for="tel">Phone</label>
-
                   <svg class="modal-input-icon">
-                    <use class="modal-input-icon-svg" href="./img/webstudio-svg.svg#user-phone"></use>
+                    <use
+                      class="modal-input-icon-svg"
+                      href="./img/webstudio-svg.svg#user-phone"
+                    ></use>
                   </svg>
-
                 </div>
 
                 <div class="form-field">
+                  <label class="form-field-label" for="email">Email</label>
                   <input
                     class="form-field-input"
                     type="email"
@@ -103,13 +108,16 @@
                     id="email"
                     placeholder="me@mail.com"
                   />
-                  <label class="form-field-label" for="email">Email</label>
                   <svg class="modal-input-icon">
-                    <use class="modal-input-icon-svg" href="./img/webstudio-svg.svg#user-mail"></use>
+                    <use
+                      class="modal-input-icon-svg"
+                      href="./img/webstudio-svg.svg#user-mail"
+                    ></use>
                   </svg>
                 </div>
 
                 <div class="form-field">
+                  <label class="form-field-textarea-label" for="comment">Comment</label>
                   <textarea
                     class="form-field-textarea"
                     name="comment"
@@ -117,7 +125,6 @@
                     rows="10"
                     placeholder="Write additional data or comments here"
                   ></textarea>
-                  <label class="form-field-textarea-label" for="comment">Comment</label>
                 </div>
               </form>
               <div class="modal-privacypolicy">
@@ -497,7 +504,7 @@
         </div>
         <div class="subscribe-footer">
           <p class="subscribe-label-title">Subscribe</p>
-          <form action="subscribe-button-form">
+          <form class="subscribe-button-form">
             <label class="subscribe-label-title" for="subscrib-email"></label>
             <input
               class="subscribe-label-input"
